@@ -1,4 +1,4 @@
-import 'package:b1910036_lab1/ui/cart/cart_screen.dart';
+import 'package:foodanddrink/ui/cart/cart_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'products_grid.dart';

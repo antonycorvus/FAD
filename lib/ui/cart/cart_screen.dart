@@ -1,4 +1,4 @@
-import 'package:b1910036_lab1/ui/orders/order_manager.dart';
+import 'package:foodanddrink/ui/orders/order_manager.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'cart_manager.dart';
