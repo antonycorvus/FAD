@@ -10,25 +10,25 @@ class AppBanner extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: const EdgeInsets.only(bottom: 20.0),
+      margin: const EdgeInsets.only(bottom: 35),
       padding: const EdgeInsets.symmetric(
-        vertical: 8.0,
+        vertical: 50.0,
         horizontal: 94.0,
       ),
-      transform: Matrix4.rotationZ(-8 * pi / 180)..translate(-10.0),
+      // transform: Matrix4.rotationZ(-8 * pi / 180)..translate(-10.0),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(20),
-        color: Colors.deepOrange.shade900,
+        color: Colors.lightGreen.shade900,
         boxShadow: const [
           BoxShadow(
             blurRadius: 8,
-            color: Colors.black26,
+            color: Colors.yellowAccent,
             offset: Offset(0, 2),
           )
         ],
       ),
       child: Text(
-        'FAD',
+        'Food And Drink',
         style: TextStyle(
           color: Theme.of(context).textTheme.headline6?.color,
           fontSize: 50,

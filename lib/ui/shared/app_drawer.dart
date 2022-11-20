@@ -13,13 +13,15 @@ class AppDrawer extends StatelessWidget {
       child: Column(
         children: <Widget>[
           AppBar(
-            title: const Text('Hello Friend!'),
+            title: const Text('FAD'),
+            
             automaticallyImplyLeading: false,
           ),
           const Divider(),
           ListTile(
             leading: const Icon(Icons.shop),
-            title: const Text('Shop'),
+            title: const Text('Food And Drink'),
+            textColor: Colors.blue[300],
             onTap: (){
               Navigator.of(context).pushReplacementNamed('/');
             },
@@ -28,6 +30,7 @@ class AppDrawer extends StatelessWidget {
           ListTile(
             leading: const Icon(Icons.payment),
             title: const Text('Orders'),
+            textColor: Colors.blue[300],
             onTap: (){
               Navigator.of(context).pushReplacementNamed(OrdersScreen.routeName);
             },
@@ -35,7 +38,8 @@ class AppDrawer extends StatelessWidget {
           const Divider(),
           ListTile(
             leading: const Icon(Icons.edit),
-            title: const Text('Manage Products'),
+            title: const Text('Chỉnh sửa thực phẩm'),
+            textColor: Colors.blue[300],
             onTap: (){
               Navigator.of(context).pushReplacementNamed(UserProductsScreen.routeName);
             },
@@ -43,7 +47,8 @@ class AppDrawer extends StatelessWidget {
           const Divider(),
           ListTile(
             leading: const Icon(Icons.exit_to_app),
-            title: const Text('logout'),
+            title: const Text('LoG IN'),
+            textColor: Colors.blue[300],
             onTap: (){
               Navigator.of(context)
                 ..pop()

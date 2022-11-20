@@ -6,9 +6,9 @@ class CartManager with ChangeNotifier{
   Map<String, CartItem> _items = {
     'p1': CartItem(
       id: 'c1',
-      title: 'Red Shirt',
-      price: 29.99,
-      quantity: 2,
+      title: 'Rượu apsinthion',
+      price: 99,
+      quantity: 1,
     ),
   };
 

@@ -20,10 +20,15 @@ class ProductGridTile extends StatelessWidget {
         footer: buildGridFooterBar(context),
         child: GestureDetector(
           onTap: (){
-            Navigator.of(context).pushNamed(
-              ProductDetailScreen.routeName,
-              arguments: product.id,
+            Navigator.of(context).push(
+              MaterialPageRoute(
+                builder: (ctx) => ProductDetailScreen(product),
+              ),
             );
+            // Navigator.of(context).pushNamed(
+            //   ProductDetailScreen.routeName,
+            //   arguments: product.id,
+            // );
           },
           child: Image.network(
             product.imageUrl,
@@ -35,7 +40,7 @@ class ProductGridTile extends StatelessWidget {
   }
   Widget buildGridFooterBar(BuildContext context) {
     return GridTileBar(
-      backgroundColor: Colors.black87,
+      backgroundColor: Colors.green[500],
       leading: ValueListenableBuilder<bool>(
         valueListenable: product.isFavoriteListenable,
         builder: (ctx, isFavorite, child){
@@ -66,11 +71,11 @@ class ProductGridTile extends StatelessWidget {
             ..showSnackBar(
               SnackBar(
                 content: const Text(
-                  'Item added to cart',
+                  'Sản phẩm đã được thêm vào giỏ hàng',
                 ),
                 duration: const Duration(seconds: 2),
                 action: SnackBarAction(
-                  label: 'UNDO',
+                  label: 'TRỞ LẠI',
                   onPressed: (){
                     cart.removeSingleItem(product.id!);
                   },
