@@ -19,6 +19,7 @@ class ProductsManager  with ChangeNotifier{
       price: 59.99,
       imageUrl:
           'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Mega_Force_Energy_Drink.jpg/640px-Mega_Force_Energy_Drink.jpg',
+      isFavorite: true,
     ),
     Product(
       id: 'p3',
@@ -27,6 +28,7 @@ class ProductsManager  with ChangeNotifier{
       price: 50.90,
       imageUrl:
           'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Danyuja-ade_%28dangyuja_beverage%29.jpg/640px-Danyuja-ade_%28dangyuja_beverage%29.jpg',
+      isFavorite: true,
     ),
     Product(
       id: 'p4',

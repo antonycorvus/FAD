@@ -24,7 +24,7 @@ class _ProductsOverviewScreenState extends State<ProductsOverviewScreen> {
       appBar: AppBar(
         title: const Text('Food And Drink'),
         actions: <Widget>[
-          buildProductFilterMenu(),
+          // buildProductFilterMenu(),
           buildShoppingCartIcon(),
         ],
       ),
@@ -47,31 +47,31 @@ class _ProductsOverviewScreenState extends State<ProductsOverviewScreen> {
       },
     );
   }
-  Widget buildProductFilterMenu(){
-    return PopupMenuButton(
-      onSelected: (FilterOptions selectedValue){
-        setState(() {
-          if (selectedValue == FilterOptions.favorites){
-            _showOnlyFavorites = true;
-          }
-          else{
-            _showOnlyFavorites = false;
-          }
-        });
-      },
-      icon: const Icon(
-        Icons.more_vert,
-      ),
-      itemBuilder: (ctx) => [
-        const PopupMenuItem(
-          value: FilterOptions.all,
-          child: Text('Quan tâm'),
-        ),
-        const PopupMenuItem(
-          value: FilterOptions.all,
-          child: Text('Hiển thị tất cả')
-        ),
-      ],
-    );
-  }
+  // Widget buildProductFilterMenu(){
+  //   return PopupMenuButton(
+  //     onSelected: (FilterOptions selectedValue){
+  //       setState(() {
+  //         if (selectedValue == FilterOptions.favorites){
+  //           _showOnlyFavorites = true;
+  //         }
+  //         else{
+  //           _showOnlyFavorites = false;
+  //         }
+  //       });
+  //     },
+  //     icon: const Icon(
+  //       Icons.more_vert,
+  //     ),
+  //     itemBuilder: (ctx) => [
+  //       const PopupMenuItem(
+  //         value: FilterOptions.all,
+  //         child: Text('Quan tâm'),
+  //       ),
+  //       const PopupMenuItem(
+  //         value: FilterOptions.all,
+  //         child: Text('Hiển thị tất cả')
+  //       ),
+  //     ],
+  //   );
+  // }
 }
