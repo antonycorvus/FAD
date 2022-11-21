@@ -12,18 +12,18 @@ class AppBanner extends StatelessWidget {
     return Container(
       margin: const EdgeInsets.only(bottom: 35),
       padding: const EdgeInsets.symmetric(
-        vertical: 50.0,
-        horizontal: 94.0,
+        vertical: 25.0,
+        horizontal: 44.0,
       ),
       // transform: Matrix4.rotationZ(-8 * pi / 180)..translate(-10.0),
       decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(20),
-        color: Colors.lightGreen.shade900,
+        borderRadius: BorderRadius.circular(50),
+        color: Colors.white60,
         boxShadow: const [
           BoxShadow(
-            blurRadius: 8,
+            blurRadius: 10,
             color: Colors.yellowAccent,
-            offset: Offset(0, 2),
+            offset: Offset(0, 3),
           )
         ],
       ),

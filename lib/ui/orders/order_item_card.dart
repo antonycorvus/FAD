@@ -17,7 +17,7 @@ class _OrderItemCardState extends State<OrderItemCard> {
   @override
   Widget build(BuildContext context) {
     return Card(
-      margin: const EdgeInsets.all(10),
+      margin: const EdgeInsets.all(12),
       child: Column(
         children: <Widget>[
           buildOrderSummary(),
@@ -41,14 +41,16 @@ class _OrderItemCardState extends State<OrderItemCard> {
                   prod.title,
                   style: const TextStyle(
                     fontSize: 18,
-                    fontWeight: FontWeight.bold,
+                    fontWeight: FontWeight.w700,
+                    color: Color.fromARGB(255, 175, 31, 17),
                   ),
                 ),
                 Text(
-                  '${prod.quantity}x \$${prod.price}',
+                  'Số lượng: ${prod.quantity}    Đơn Giá: \$${prod.price}',
+                  textAlign: TextAlign.right,
                   style: const TextStyle(
-                    fontSize: 18,
-                    color: Colors.grey,
+                    fontSize: 15,
+                    color: Color.fromARGB(255, 175, 31, 17),
                   ),
                 )
               ],
@@ -60,7 +62,8 @@ class _OrderItemCardState extends State<OrderItemCard> {
   }
   Widget buildOrderSummary(){
     return ListTile(
-      title: Text('\$${widget.order.amount}'),
+      title: Text('Đơn Hàng: \$${widget.order.amount}'),
+      textColor: Color.fromARGB(255, 5, 35, 225),
       subtitle: Text(
         DateFormat('dd/MM/yyyy hh:mm').format(widget.order.dateTime),
       ),

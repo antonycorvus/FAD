@@ -40,15 +40,15 @@ class ProductGridTile extends StatelessWidget {
   }
   Widget buildGridFooterBar(BuildContext context) {
     return GridTileBar(
-      backgroundColor: Colors.green[500],
+      backgroundColor: Color.fromARGB(255, 16, 243, 57),
       leading: ValueListenableBuilder<bool>(
         valueListenable: product.isFavoriteListenable,
         builder: (ctx, isFavorite, child){
           return IconButton(
             icon: Icon(
-            product.isFavorite ? Icons.favorite: Icons.favorite_border,
+            product.isFavorite ? Icons.label_important_outline: Icons.check_circle_outline,
             ),
-            color: Theme.of(context).colorScheme.secondary,
+            color: Theme.of(context).colorScheme.error,
             onPressed: (){
               product.isFavorite = !isFavorite;
             },
@@ -57,11 +57,12 @@ class ProductGridTile extends StatelessWidget {
       ),
       title: Text(
         product.title,
-        textAlign: TextAlign.center,
+        textAlign: TextAlign.left,
+        overflow: TextOverflow.clip,
       ),
       trailing: IconButton(
         icon: const Icon(
-          Icons.shopping_cart,
+          Icons.shopping_bag,
         ),
         onPressed: (){
           final cart = context.read<CartManager>();
@@ -71,11 +72,11 @@ class ProductGridTile extends StatelessWidget {
             ..showSnackBar(
               SnackBar(
                 content: const Text(
-                  'Sản phẩm đã được thêm vào giỏ hàng',
+                  'Sản phẩm đã được thêm vào túi hàng',
                 ),
                 duration: const Duration(seconds: 2),
                 action: SnackBarAction(
-                  label: 'TRỞ LẠI',
+                  label: 'CANCEl',
                   onPressed: (){
                     cart.removeSingleItem(product.id!);
                   },

@@ -7,7 +7,7 @@ class CartManager with ChangeNotifier{
     'p1': CartItem(
       id: 'c1',
       title: 'Rượu apsinthion',
-      price: 99,
+      price: 99.00,
       quantity: 1,
     ),
   };

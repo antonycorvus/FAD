@@ -14,14 +14,14 @@ class UserProductsScreen extends StatelessWidget {
     final productsManager = ProductsManager();
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Your Products'),
+        title: const Text('Sản phẩm của bạn'),
         actions: <Widget>[
           buildAddButton(context),
         ],
       ),
       drawer: const AppDrawer(),
       body: RefreshIndicator(
-        onRefresh: () async => print('refresh products'),
+        onRefresh: () async => print('Làm Mới'),
         child: buildUserProductListView(),
       ),
     );

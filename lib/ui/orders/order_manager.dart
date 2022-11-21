@@ -7,13 +7,13 @@ class OrdersManager with ChangeNotifier{
   final List<OrderItem> _orders = [
     OrderItem(
       id: 'o1',
-      amount: 59.98,
+      amount: 99.00,
       products: [
         CartItem(
           id: 'c1',
-          title: 'Red Shirt',
-          price: 29.99,
-          quantity: 2,
+          title: 'Rượu apsinthion',
+          price: 99.00,
+          quantity: 1,
         )
       ],
       dateTime: DateTime.now(),

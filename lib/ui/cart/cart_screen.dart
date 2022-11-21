@@ -13,7 +13,7 @@ class CartScreen extends StatelessWidget {
     final cart = context.watch<CartManager>();
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Your Cart'),
+        title: const Text('Túi Hàng'),
       ),
       body: Column(
         children: <Widget>[
@@ -48,10 +48,11 @@ class CartScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: <Widget>[
             const Text(
-              'Total',
-              style: TextStyle(fontSize: 20),
+              'Thanh Toán',
+              style: TextStyle(fontSize: 20, color: Colors.red),
+              
             ),
-            const Spacer(),
+            // const Spacer(),
             Chip(
               label: Text(
                 '\$${cart.totalAmount.toStringAsFixed(2)}',
@@ -74,7 +75,7 @@ class CartScreen extends StatelessWidget {
               style: TextButton.styleFrom(
                 textStyle: TextStyle(color: Theme.of(context).primaryColor),
               ),
-              child: const Text('ORDER NOW'),
+              child: const Text('ĐẶT NGAY'),
             )
           ],
         ),

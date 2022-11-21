@@ -34,15 +34,14 @@ class MyApp extends StatelessWidget {
       child: Consumer<AuthManager>(
         builder: (ctx, authManager, child) {
           return MaterialApp(
-            title: 'My Shop',
+            title: 'Food And Drink',
             debugShowCheckedModeBanner: false,
             theme: ThemeData(
               fontFamily: 'Lato',
               colorScheme: ColorScheme.fromSwatch(
-                primarySwatch: Colors.purple,
+                primarySwatch: Colors.green,
               ) .copyWith(
-                secondary: Colors.deepOrange,
-              ),
+                secondary: Color.fromARGB(255, 196, 67, 50)),
             ),
             home: authManager.isAuth ? const ProductsOverviewScreen() : FutureBuilder(
               future: authManager.tryAutoLogin(),

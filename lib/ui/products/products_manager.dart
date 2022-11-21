@@ -7,7 +7,7 @@ class ProductsManager  with ChangeNotifier{
       id: 'p1',
       title: 'Rượu apsinthion',
       description: 'Một loại rượu nhẹ và thích hợp trong những bữa tiệc nhỏ',
-      price: 99,
+      price: 99.00,
       imageUrl:
           'https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/02020_0238_Absinthe_bottle.jpg/640px-02020_0238_Absinthe_bottle.jpg',
       isFavorite: true,
@@ -18,13 +18,13 @@ class ProductsManager  with ChangeNotifier{
       description: 'Một lon nước sau những khoảng thời gian căng thẳng là một lựa chọn tuyệt vời cho bạn',
       price: 59.99,
       imageUrl:
-          'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/%D0%92%D0%BA%D1%83%D1%81%D1%8B_Burn.jpg/640px-%D0%92%D0%BA%D1%83%D1%81%D1%8B_Burn.jpg',
+          'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Mega_Force_Energy_Drink.jpg/640px-Mega_Force_Energy_Drink.jpg',
     ),
     Product(
       id: 'p3',
       title: 'Dangyuja',
       description: 'một món ngon dành cho những ngày năng nóng',
-      price: 50.9,
+      price: 50.90,
       imageUrl:
           'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Danyuja-ade_%28dangyuja_beverage%29.jpg/640px-Danyuja-ade_%28dangyuja_beverage%29.jpg',
     ),
@@ -32,7 +32,7 @@ class ProductsManager  with ChangeNotifier{
       id: 'p4',
       title: 'Nước Chanh',
       description: 'Sự giải khát cho một ngày nắng nóng',
-      price: 9,
+      price: 91.00,
       imageUrl:
           'https://cafefcdn.com/thumb_w/650/2018/2/3/photo1517622555691-1517622555691600774596.jpg',
       isFavorite: true,
@@ -49,7 +49,8 @@ class ProductsManager  with ChangeNotifier{
     Product(
       id: 'p6',
       title: 'Sweet olive pork',
-      description: 'món ăn ngon với sự kết hợp hài hòa của nguyên liệu tự nhiên',
+      description: 
+      'món ăn ngon với sự kết hợp hài hòa của nguyên liệu tự nhiên',
       price: 49.99,
       imageUrl:
           'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Sweet_olive_pork_belly_crawfish%2C_chow_chow.jpg/640px-Sweet_olive_pork_belly_crawfish%2C_chow_chow.jpg',
@@ -59,7 +60,7 @@ class ProductsManager  with ChangeNotifier{
       id: 'p7',
       title: 'Street Food',
       description: 'một món ăn đường phố mang đầy tính nghệ thuật và thẩm mỹ',
-      price: 99,
+      price: 99.00,
       imageUrl:
           'https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Delicious_Street_Food_-_2.jpg/640px-Delicious_Street_Food_-_2.jpg',
       isFavorite: true,
@@ -68,7 +69,7 @@ class ProductsManager  with ChangeNotifier{
       id: 'p8',
       title: 'Galician dumplings',
       description: 'Một trong những món ăn ngon vào ngày nghỉ',
-      price: 100,
+      price: 21.00,
       imageUrl:
           'https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/02021_0459_%284%29_Galician_dumplings_as_a_symbolic_food_for_the_Lunar_New_Year.jpg/640px-02021_0459_%284%29_Galician_dumplings_as_a_symbolic_food_for_the_Lunar_New_Year.jpg',
       isFavorite: true,

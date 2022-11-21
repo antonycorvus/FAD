@@ -22,7 +22,7 @@ class _ProductsOverviewScreenState extends State<ProductsOverviewScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('FAD'),
+        title: const Text('Food And Drink'),
         actions: <Widget>[
           buildProductFilterMenu(),
           buildShoppingCartIcon(),
@@ -38,7 +38,7 @@ class _ProductsOverviewScreenState extends State<ProductsOverviewScreen> {
         return TopRightBadge(
           data: cartManager.productCount,
           child: IconButton(
-            icon: const Icon(Icons.shopping_cart),
+            icon: const Icon(Icons.shopping_cart_checkout_sharp),
             onPressed: () {
               Navigator.of(context).pushNamed(CartScreen.routeName);
             },
@@ -65,7 +65,7 @@ class _ProductsOverviewScreenState extends State<ProductsOverviewScreen> {
       itemBuilder: (ctx) => [
         const PopupMenuItem(
           value: FilterOptions.all,
-          child: Text('Sản phẩm yêu thích'),
+          child: Text('Quan tâm'),
         ),
         const PopupMenuItem(
           value: FilterOptions.all,
