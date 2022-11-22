@@ -30,6 +30,7 @@ class _ProductsOverviewScreenState extends State<ProductsOverviewScreen> {
       ),
       drawer: const AppDrawer(),
       body: ProductsGrid(_showOnlyFavorites),
+      backgroundColor: Color.fromARGB(255, 125, 147, 227),
     );
   }
   Widget buildShoppingCartIcon(){

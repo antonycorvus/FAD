@@ -30,7 +30,7 @@ class _OrderItemCardState extends State<OrderItemCard> {
   Widget buildOrderDetails(){
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 4),
-      height: min(widget.order.productCount * 20.0 + 10, 100),
+      height: min(widget.order.productCount * 20.0 + 10, 1000),
       child: ListView(
         children: widget.order.products
           .map(
@@ -38,7 +38,7 @@ class _OrderItemCardState extends State<OrderItemCard> {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: <Widget>[
                 Text(
-                  prod.title,
+                  prod.title,   
                   style: const TextStyle(
                     fontSize: 18,
                     fontWeight: FontWeight.w700,
