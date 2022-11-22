@@ -69,7 +69,7 @@ class ProductsManager  with ChangeNotifier{
     ),
     Product(
       id: 'p8',
-      title: 'Galician dumplings',
+      title: 'Galician',
       description: 'Một trong những món ăn ngon vào ngày nghỉ',
       price: 21,
       imageUrl:
