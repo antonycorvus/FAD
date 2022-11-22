@@ -29,6 +29,7 @@ class Product {
     return _isFavorite;
   }
   
+  
   Product copyWith({
     String? id,
     String? title,
